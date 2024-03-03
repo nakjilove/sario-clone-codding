@@ -1,17 +1,12 @@
 /* 공통 */
 body {
+  /* background-color: orange; */
+  height: 2000px;
   color: #222;
   font-size: 100%;
   font-weight: 400;
   line-height: 1.4;
   font-family: "Montserrat", sans-serif;
-}
-
-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column; 
-  align-items: center;
 }
 
 a {
@@ -166,26 +161,22 @@ header .badges .to-top span::before {
 .visual {
   width: 100%;
   margin-top: 100px;
-  height: 832px;
+  height: 845.33px;
   background-image: url(../images/pattern2.png);
-  
 }
 
-.visual  {
-  position: relative;
-}
-
-.visual .mainimg {
+.visual .main .mainimg {
   position: absolute;
-  top: 0;
+  top: 100px;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
 }
 
-.visual .scrollDown {
+.visual .main .scrollDown {
   font-size: 10px;
+
   position: absolute;
   text-align: center;
   bottom: 50px;
@@ -206,7 +197,6 @@ header .badges .to-top span::before {
   height: 1420.620;
   margin: 0 242px;
   box-sizing: border-box;
-  flex-wrap: wrap;
 }
 
 .charactors .container h2 {
@@ -231,16 +221,13 @@ header .badges .to-top span::before {
 .charactors .container ul.char_inner {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 10px;
 }
 
 .charactors .container ul.char_inner li.profile {
-  flex-basis: calc(25% - 20px);
-  margin-bottom: 20px; 
+  margin: 0 10px 20px;
   border: solid 1px #eee;
   box-sizing: border-box;
-  border-radius: 20px;
+  border-radius: 20px 20px 20px 20px;
   cursor: pointer;
 }
 
@@ -312,7 +299,7 @@ header .badges .to-top span::before {
   box-sizing: border-box;
 }
 
-.companys .container h2.company {
+.companys .container h2 {
   margin-bottom: 30px;
   font-size: 3.125rem;
   font-weight: 500;
@@ -438,8 +425,6 @@ header .badges .to-top span::before {
   height: 200.625px;
   padding: 88px 0 210px;
   background: url(../images/bg_shop.jpg)no-repeat center;
-  margin: 0 auto; 
-  text-align: center;
 }
 
 .place .container {
